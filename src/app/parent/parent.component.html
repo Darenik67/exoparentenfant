@@ -1,0 +1,4 @@
+<p>parent works!</p>
+<div *ngFor="let card of cards; let i = index">
+    <app-enfant [card]="card" (remove)="removeCard(i)"></app-enfant>
+  </div>
